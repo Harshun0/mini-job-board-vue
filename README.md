@@ -1,7 +1,10 @@
-
 # Mini Job Board
 
-A simple job board web application built with React, TypeScript, and Tailwind CSS.
+A simple job board web application built with Vue, TypeScript, and Tailwind CSS.
+
+## About This Project
+
+This is a personal project developed to showcase web development skills and create a practical job board application. The project demonstrates modern web development techniques and responsive design.
 
 ## Setup Instructions
 
@@ -13,8 +16,8 @@ A simple job board web application built with React, TypeScript, and Tailwind CS
 
 1. Clone this repository
 ```sh
-git clone <repository-url>
-cd mini-job-board
+git clone <your-repository-url>
+cd mini-job-board-vue
 ```
 
 2. Install dependencies
@@ -36,32 +39,21 @@ yarn dev
 ## Project Structure
 
 ```
-mini-job-board/
+mini-job-board-vue/
 ├── src/
 │   ├── components/     # Reusable UI components
-│   │   ├── JobCard.tsx
-│   │   ├── JobFilters.tsx
-│   │   ├── Pagination.tsx
-│   │   └── EmptyState.tsx
 │   ├── data/           # Static data files
-│   │   └── jobs.json
-│   ├── hooks/          # Custom React hooks
-│   │   └── useJobs.ts
+│   ├── hooks/          # Custom Vue hooks
 │   ├── pages/          # Page components
-│   │   ├── Index.tsx
-│   │   ├── JobListingsPage.tsx
-│   │   ├── JobDetailPage.tsx
-│   │   └── NotFound.tsx
 │   ├── types/          # TypeScript type definitions
-│   │   └── job.ts
-│   ├── App.tsx         # Main application component
-│   └── main.tsx        # Application entry point
+│   ├── App.vue         # Main application component
+│   └── main.ts         # Application entry point
 └── README.md           # Project documentation
 ```
 
 ## Features
 
-- View all job listings with pagination (5 jobs per page)
+- View all job listings with pagination
 - Filter jobs by location and job type
 - View detailed information for each job
 - URL-based filter persistence
@@ -72,3 +64,18 @@ mini-job-board/
 - The "Apply Now" button on the job details page is currently non-functional
 - No form validation or error handling for filters
 - No loading states for data fetching
+
+## Future Improvements
+
+- Implement backend integration
+- Add user authentication
+- Enhance filter and search functionality
+
+## License
+
+[Choose an appropriate license, e.g., MIT License]
+
+## Contact
+
+[Your Name]
+[Your Email or GitHub Profile]
