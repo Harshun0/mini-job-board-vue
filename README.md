@@ -1,79 +1,102 @@
 # Mini Job Board
 
-A simple job board web application built with Vue, TypeScript, and Tailwind CSS.
+A modern job board web application built with React, TypeScript, Tailwind CSS, and Shadcn UI.
 
-## About This Project
+## Prerequisites
 
-This is a personal project developed to showcase web development skills and create a practical job board application. The project demonstrates modern web development techniques and responsive design.
+- Node.js (v18 or newer)
+- npm (v9 or newer)
 
 ## Setup Instructions
 
-### Prerequisites
-- Node.js (v14 or newer)
-- npm or yarn
+### 1. Clone the Repository
 
-### Installation
-
-1. Clone this repository
-```sh
-git clone <your-repository-url>
+```bash
+git clone https://github.com/Harshun0/mini-job-board-vue.git
 cd mini-job-board-vue
 ```
 
-2. Install dependencies
-```sh
+### 2. Install Dependencies
+
+```bash
 npm install
-# or
-yarn install
 ```
 
-3. Start the development server
-```sh
+### 3. Run the Development Server
+
+```bash
 npm run dev
-# or
-yarn dev
 ```
 
-4. Open your browser and navigate to `http://localhost:8080`
+The application will be available at `http://localhost:8080`
 
 ## Project Structure
 
 ```
 mini-job-board-vue/
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── data/           # Static data files
-│   ├── hooks/          # Custom Vue hooks
-│   ├── pages/          # Page components
-│   ├── types/          # TypeScript type definitions
-│   ├── App.vue         # Main application component
-│   └── main.ts         # Application entry point
-└── README.md           # Project documentation
+├── public/              # Public assets
+│   └── favicon.svg      # Custom favicon
+├── src/                 # Source code
+│   ├── components/      # Reusable React components
+│   │   ├── ui/          # Shadcn UI components
+│   │   │   ├── button.tsx
+│   │   │   ├── input.tsx
+│   │   │   └── ...
+│   │   ├── JobCard.tsx  # Job listing card component
+│   │   ├── JobFilters.tsx  # Filtering components
+│   │   └── ...
+│   ├── lib/             # Utility functions and helpers
+│   │   └── utils.ts     # Utility functions
+│   ├── pages/           # Page components
+│   │   ├── Index.tsx    # Home/Landing page
+│   │   ├── JobListings.tsx  # Job listings page
+│   │   └── JobDetails.tsx   # Individual job details page
+│   ├── types/           # TypeScript type definitions
+│   │   └── job.ts       # Job-related type definitions
+│   ├── hooks/           # Custom React hooks
+│   │   └── useJobs.ts   # Job-related hooks
+│   ├── App.tsx          # Main application component
+│   └── main.tsx         # Application entry point
+├── tailwind.config.js   # Tailwind CSS configuration
+├── vite.config.ts       # Vite configuration
+├── tsconfig.json        # TypeScript configuration
+└── package.json         # Project dependencies and scripts
+
 ```
+
+## Key Technologies
+
+- React 18
+- TypeScript
+- Tailwind CSS
+- Shadcn UI
+- React Router
+- React Query
+- Vite
 
 ## Features
 
-- View all job listings with pagination
-- Filter jobs by location and job type
-- View detailed information for each job
-- URL-based filter persistence
-- Responsive design for mobile and desktop
+- Responsive job board interface
+- Job listing and filtering
+- Modern, clean UI
+- TypeScript for type safety
 
 ## Known Issues
 
-- The "Apply Now" button on the job details page is currently non-functional
-- No form validation or error handling for filters
-- No loading states for data fetching
+- The "Apply Now" button is currently non-functional
+- No backend integration yet
+- Limited job data
 
 ## Future Improvements
 
-- Implement backend integration
+- Implement backend API integration
 - Add user authentication
-- Enhance filter and search functionality
+- Enhance job search and filter functionality
+- Implement job application process
 
 ## License
 
-[Choose an appropriate license, e.g., MIT License]
+[Choose an appropriate license]
 
 ## Contact
 
