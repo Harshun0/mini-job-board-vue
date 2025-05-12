@@ -63,7 +63,7 @@ const JobFiltersComponent: React.FC<JobFiltersProps> = ({
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">All Locations</SelectItem>
+                <SelectItem value="all-locations">All Locations</SelectItem>
                 {locations.map((location) => (
                   <SelectItem key={location} value={location}>
                     {location}
@@ -85,7 +85,7 @@ const JobFiltersComponent: React.FC<JobFiltersProps> = ({
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">All Types</SelectItem>
+                <SelectItem value="all-types">All Types</SelectItem>
                 {types.map((type) => (
                   <SelectItem key={type} value={type}>
                     {type}

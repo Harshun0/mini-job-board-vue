@@ -27,11 +27,11 @@ export const useJobs = () => {
     // Filter jobs
     let result = [...jobs];
     
-    if (filters.location) {
+    if (filters.location && filters.location !== 'all-locations') {
       result = result.filter(job => job.location === filters.location);
     }
     
-    if (filters.type) {
+    if (filters.type && filters.type !== 'all-types') {
       result = result.filter(job => job.type === filters.type);
     }
     
@@ -63,7 +63,7 @@ export const useJobs = () => {
     const updatedParams = new URLSearchParams(searchParams);
     
     Object.entries(newFilters).forEach(([key, value]) => {
-      if (value) {
+      if (value && value !== 'all-locations' && value !== 'all-types') {
         updatedParams.set(key, value.toString());
       } else {
         updatedParams.delete(key);
