@@ -1,0 +1,59 @@
+
+[
+  {
+    "id": "job1",
+    "title": "Frontend Developer",
+    "company": "TechCorp",
+    "location": "Bangalore",
+    "type": "Full-time",
+    "description": "Build and maintain UI components using Vue.js and Tailwind CSS."
+  },
+  {
+    "id": "job2",
+    "title": "Vue.js Intern",
+    "company": "Startify",
+    "location": "Remote",
+    "type": "Internship",
+    "description": "Assist in developing features in a Nuxt 3 based frontend app."
+  },
+  {
+    "id": "job3",
+    "title": "Nuxt Developer",
+    "company": "WebWorks",
+    "location": "Chennai",
+    "type": "Contract",
+    "description": "Create dynamic routes and SSR pages in Nuxt 3."
+  },
+  {
+    "id": "job4",
+    "title": "Fullstack Vue Developer",
+    "company": "StackNinja",
+    "location": "Bangalore",
+    "type": "Full-time",
+    "description": "Build APIs and frontend in a modern Vue + Node stack."
+  },
+  {
+    "id": "job5",
+    "title": "Junior Frontend Developer",
+    "company": "UIExperts",
+    "location": "Remote",
+    "type": "Part-time",
+    "description": "Maintain component libraries and write unit tests."
+  },
+  {
+    "id": "job6",
+    "title": "Design Systems Intern",
+    "company": "PixelPlay",
+    "location": "Bangalore",
+    "type": "Internship",
+    "description": "Work with senior designers to build reusable Vue components."
+  },
+  {
+    "id": "job7",
+    "title": "Frontend Architect",
+    "company": "ScaleUp",
+    "location": "Hyderabad",
+    "type": "Full-time",
+    "description": "Lead frontend tech decisions and mentor engineers."
+  }
+]

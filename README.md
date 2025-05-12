@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
 
-## Project info
+# Mini Job Board
 
-**URL**: https://lovable.dev/projects/6502ea97-754f-4536-ab07-115f6cdcbac2
+A simple job board web application built with React, TypeScript, and Tailwind CSS.
 
-## How can I edit this code?
+## Setup Instructions
 
-There are several ways of editing your application.
+### Prerequisites
+- Node.js (v14 or newer)
+- npm or yarn
 
-**Use Lovable**
+### Installation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6502ea97-754f-4536-ab07-115f6cdcbac2) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+1. Clone this repository
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+git clone <repository-url>
+cd mini-job-board
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies
+```sh
+npm install
+# or
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server
+```sh
+npm run dev
+# or
+yarn dev
+```
 
-**Use GitHub Codespaces**
+4. Open your browser and navigate to `http://localhost:8080`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+mini-job-board/
+├── src/
+│   ├── components/     # Reusable UI components
+│   │   ├── JobCard.tsx
+│   │   ├── JobFilters.tsx
+│   │   ├── Pagination.tsx
+│   │   └── EmptyState.tsx
+│   ├── data/           # Static data files
+│   │   └── jobs.json
+│   ├── hooks/          # Custom React hooks
+│   │   └── useJobs.ts
+│   ├── pages/          # Page components
+│   │   ├── Index.tsx
+│   │   ├── JobListingsPage.tsx
+│   │   ├── JobDetailPage.tsx
+│   │   └── NotFound.tsx
+│   ├── types/          # TypeScript type definitions
+│   │   └── job.ts
+│   ├── App.tsx         # Main application component
+│   └── main.tsx        # Application entry point
+└── README.md           # Project documentation
+```
 
-This project is built with:
+## Features
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- View all job listings with pagination (5 jobs per page)
+- Filter jobs by location and job type
+- View detailed information for each job
+- URL-based filter persistence
+- Responsive design for mobile and desktop
 
-## How can I deploy this project?
+## Known Issues
 
-Simply open [Lovable](https://lovable.dev/projects/6502ea97-754f-4536-ab07-115f6cdcbac2) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- The "Apply Now" button on the job details page is currently non-functional
+- No form validation or error handling for filters
+- No loading states for data fetching
