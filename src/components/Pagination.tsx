@@ -56,13 +56,14 @@ const Pagination: React.FC<PaginationProps> = ({
   const pageNumbers = getPageNumbers();
 
   return (
-    <div className="flex items-center justify-center gap-1 my-8">
+    <div className="flex items-center justify-center gap-2 my-10">
       <Button
         variant="outline"
         size="icon"
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
         aria-label="Previous page"
+        className="rounded-full h-9 w-9"
       >
         <ChevronLeft className="h-4 w-4" />
       </Button>
@@ -73,7 +74,7 @@ const Pagination: React.FC<PaginationProps> = ({
           variant={page === currentPage ? 'default' : 'outline'}
           size="sm"
           onClick={() => handlePageChange(page)}
-          className={page === currentPage ? 'pointer-events-none' : ''}
+          className={`${page === currentPage ? 'bg-primary text-white pointer-events-none' : ''} rounded-full h-9 w-9 p-0`}
         >
           {page}
         </Button>
@@ -85,6 +86,7 @@ const Pagination: React.FC<PaginationProps> = ({
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
         aria-label="Next page"
+        className="rounded-full h-9 w-9"
       >
         <ChevronRight className="h-4 w-4" />
       </Button>

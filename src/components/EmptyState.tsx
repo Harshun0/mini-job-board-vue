@@ -9,13 +9,17 @@ interface EmptyStateProps {
 
 const EmptyState: React.FC<EmptyStateProps> = ({ onClearFilters }) => {
   return (
-    <div className="flex flex-col items-center justify-center py-12 px-4 border rounded-lg bg-muted/10">
-      <Filter className="h-12 w-12 text-muted-foreground mb-4" />
-      <h3 className="text-xl font-semibold mb-2">No jobs found</h3>
-      <p className="text-center text-muted-foreground mb-6">
-        No jobs match your current filters. Try changing your search criteria.
+    <div className="flex flex-col items-center justify-center py-16 px-4 border rounded-xl bg-white/50 backdrop-blur-sm shadow-sm">
+      <div className="bg-secondary/80 p-4 rounded-full mb-4">
+        <Filter className="h-10 w-10 text-primary/70" />
+      </div>
+      <h3 className="text-xl font-semibold mb-2 text-primary">No opportunities found</h3>
+      <p className="text-center text-muted-foreground mb-6 max-w-md">
+        We couldn't find any jobs matching your current filters. Try adjusting your search criteria to explore more opportunities.
       </p>
-      <Button onClick={onClearFilters}>Clear Filters</Button>
+      <Button onClick={onClearFilters} className="bg-primary hover:bg-primary/90">
+        Reset Filters
+      </Button>
     </div>
   );
 };
